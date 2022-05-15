@@ -10,11 +10,12 @@ const Modal = ({ name, slots, appointment }) => {
       >
         Book Appointment
       </label>
-      {/* <input type="checkbox" id="my-modal" className="modal-toggle" />
+      <input type="checkbox" id="my-modal" className="modal-toggle" />
       <div className="modal">
         <div className="modal-box">
+        <label htmlFor="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
           <p>{name}</p>
-          <form onSubmit={handleFormSubmit} className="flex flex-col items-center gap-4">
+          <form className="flex flex-col items-center gap-4">
             <input
               type="text"
               value={format(appointment, "PPP")}
@@ -49,7 +50,7 @@ const Modal = ({ name, slots, appointment }) => {
             />
           </form>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
